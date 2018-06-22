@@ -1,0 +1,171 @@
+New modules:
+
+    * (X) account_eu (4.6)
+    * (X) account_es (4.6)
+    * (X) notification_email (4.6)
+    * (X) account_dunning_email (4.6)
+    * (X) sale_payment (4.6)
+    * (X) sale_shipment_tolerance (4.6)
+    * (D) stock_consignement (4.6)
+    * (X) stock_location_move (4.6)
+    * (X) sale_subscription (4.4)
+    * (X) stock_shipment_measurements (4.4)
+    * (X) account_invoice_correction (4.4)
+    * (X) account_payment_stripe (4.4)
+    * (X) product_price_list_dates (4.4)
+    * (X) sale_advance_payment (4.4)
+
+Removed modules:
+
+    * calendar
+
+tryton:
+
+* (D) Allow to export model and record name of Reference fields
+* (X) Re-position buttons on Binary/Image widget
+* (X) Improve treeview headers
+* (X) Update states of both toolbar and menu
+* (X) Improve toolbar order
+* (D) Use profile name or login details in title
+
+sao:
+
+* (X) Add keyboard shortcuts
+* (D) Set focus on first visible input when modal is shown
+
+account:
+
+* (X) Add definitive lock of period and fiscal
+* (X) Ease creation of new fiscalyear
+* (D) Make tax description translatable
+* (X) Add searcher on General Ledger
+* (X) Add from and to date to General Ledger and Income Statement
+* (D) Add move filtering on date range
+
+account_product:
+* (X) Allow to set default category and product accounts on configuration wizard
+
+
+account_invoice:
+
+* (D) Use tax sequence as default value for invoice taxes sequence
+* (D) Add party tax identifier on invoice
+* (D) Use Match pattern for invoice sequences
+
+account_payment:
+
+* (D) Add origin field on payment
+* (D) Support direct debit of payable line
+* (D) Set default journal when paying line
+
+account_statement:
+
+* (X) Add generic wizard to import statement from files
+* (X) Add statement origins
+* (D) Unreconcile lines when cancelling statement
+* (D)Add statement line number as move description
+* (D) Set description on statement account line if unique
+
+analytic_account:
+* (X) Add rule engine
+
+commission:
+
+* (D) Don't match product and category lines when product is empty
+* (X) Add category as plan matching criteria
+
+product_price_list:
+
+* (X) Add category as matching criteria
+
+production:
+
+* (X) Add producible to product template
+
+product:
+
+* (X) Limit cost method to fixed for service
+* (X) Move cost_price from Template to Product
+
+purchase:
+
+* (X) Do not plan backorder moves
+* (X) Add cron task to process confirmed purchase
+* (D) Add report_address property on purchase
+* (X) Add purchase price on product view from line
+* (X) Allow to edit delivery date on purchase line
+
+purchase_request:
+
+* (D) Remove required on request origin
+* (X) Add requests on purchase line
+
+sale:
+
+* (X) Plan backorder moves to today
+* (X) Add cron task to process confirmed sale
+* (D) Add report_address property on sale
+* (X) Add sale price on product view from line
+* (X) Allow no lead time on product
+
+sale_invoice_grouping:
+
+* (X) Add default invoice grouping method
+
+sale_shipment_grouping:
+
+* (X) Add default shipment grouping method
+
+sale_opportunity:
+
+* (X) Compute rates as ratio
+* (X) Make Opportunity employee not required on leads
+
+sale_price_list:
+
+* (D)Compute sale price with price list even if there is no customer
+
+sale_shipment_cost:
+
+* (D) Invoice shipment cost when at least one shipment is done
+
+sale_stock_quantity:
+
+* (D) Do not check consumable
+
+
+stock:
+
+* (X) Add flat children option on location
+* (X) Raise single warning for move without origin
+* (X) Allow to set manual effective date on move
+* (D) Improve computation of cost price
+* (D) Limit move locations 'child_of' constraints to specific shipment states
+* (X) Allow to delete staging move
+* (X) Allow to deactivate only empty locations
+* (X) Add employee on shipments for some states
+* (X) Add request state on internal shipment
+* (X) Manage same picking/storage and output location
+
+
+stock_package:
+
+* (D) Check package also when packing shipment
+
+stock_split:
+
+* (X) Add shipment split
+
+stock_supply:
+
+* (D) Add warning for late customer moves
+* (D) Change supply period into TimeDelta
+* (X) Add support for overflowing quantities
+* (X) Merge supply into one wizard
+* (D) Improve computation of max lead time
+* (X) Generate request internal shipments recursively
+* (D) Do not create purchase request if other order point exists
+
+stock_supply_production:
+
+* (D) Do not create production request if other order point exists

@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>What's new on Tryton 4.4 and 4.6</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>What's new on 4.8?</h1>
+                    <img src="img/new-version.jpg">
+                    <p>Available on: <a target="_blank"
+                        href="http://pokoli.github.io/whats-new-on-tryton-48/">
+                        http://pokoli.github.io/whats-new-on-tryton-48/</a></p>
+                </section>
+				<section>
+                    <h2> Who am I?</h2>
+                    <h3 class="fragment enfassis">
+                        Sergi Almacellas Abellana</h3>
+                    <ul>
+                        <li class="fragment">(Python &hearts;) Programmer</li>
+                        <li class="fragment">Open source enthusiast</li>
+                        <li class="fragment">Tryton commiter since Nov 2013
+                        </li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Release process</h2>
+                    <ul>
+                        <li class="fragment">New Release <span class="enfassis">every 6 months</span></li>
+                        <li class="fragment">x.0 will be LTS releases</span></li>
+                        <li class="fragment">LTS Releases will be supported for 5 years</span></li>
+                        <li class="fragment">5.0: 1st October 2018</li>
+                        <li class="fragment">5.0: Suported until October 2023</li>
+                        </li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>User Interface</h2>
+                    <h3>Active Widget</h3>
+                    <img src="img/sao_show_inactive_records.png"/>
+                </section>
+				<section>
+                    <h2>User Interface</h2>
+                    <h3>Many2One fields in editable list</h3>
+                    <img src="img/tryton_many2one_icons_editable_tree.png"/>
+                </section>
+				<section>
+                    <h2>User Interface</h2>
+                    <ul>
+                        <li class="fragment">Unaccented searches</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Desktop client</h2>
+                    <h3>Upgrade notification</h3>
+                    <img src="img/tryton_update_notification.jpg"/>
+                </section>
+				<section>
+                    <h2>Web Client</h2>
+                    <h3>Editable Tree View improved</h3>
+                    <img src="img/sao_sum_widget.png"/>
+                </section>
+				<section>
+                    <h2>Web Client</h2>
+                    <ul>
+                        <li class="fragment">Format numeric fields</li>
+                        <li class="fragment">Label and count possition on lists</li>
+                        <li class="fragment">Spell Checking</li>
+                        <li class="fragment">Skip button of widgeds for fast tabbing</li>
+                        <li class="fragment">Sum feature on list</li>
+                        <li class="fragment">Many2One as link on tree view</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Parties</h2>
+                    <ul>
+                        <li class="fragment">Erase wizard for GDPR</li>
+                        <li class="fragment">Add name to conatact mechanism</li>
+                        <li class="fragment">Contact mechanism usage flag</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Product</h2>
+                    <ul>
+                        <li class="fragment">Match parent categories</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Accounting</h2>
+                    <ul>
+                        <li class="fragment">Allow chart template override</li>
+                        <li class="fragment">Warning when creating a second chart of accounts</li>
+                        <li class="fragment">Open detail on Income Statement</li>
+                        <li class="fragment">Allow multiple tax codes per tax</li>
+                        <li class="fragment">Tax report on cash basis</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Spanish Chart of Accounts</h2>
+                    <ul>
+                        <li class="fragment">Removed not needed intermediary accounts</li>
+                        <li class="fragment">Tax code to mimic AEAT models (111/115/303)</li>
+                        <li class="fragment">Removed too specific taxes</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Invoicing</h2>
+                    <ul>
+                        <li class="fragment">Optional description, product name is used on report</li>
+                        <li class="fragment">Store reconciliation date instead of boolean field</li>
+                        <li class="fragment">Raise an error when overpaying an invoice</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Payment</h2>
+                    <ul>
+                        <li class="fragment">Cron tasks to post clearing move after journal</li>
+                        <li class="fragment">Manage stripe dispute statues</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Statement</h2>
+                    <ul>
+                        <li class="fragment">Add a button to reconcile from statement</li>
+                        <li class="fragment">Import OFX file format</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Stock</h2>
+                    <ul>
+                        <li class="fragment">Show product quantity per template</li>
+                        <li class="fragment">Add list of product quantities per location</li>
+                        <li class="fragment">Skip inventory step in supplier shipment</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Sales & Purhcases</h2>
+                    <ul>
+                        <li class="fragment">Optional description, product name is used on report</li>
+                        <li class="fragment">Wizard to modify header</li>
+                        <li class="fragment">Invoice Paid method on purchase requests or drop shipments</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Sale Reporting</h2>
+                    <img src="img/sao_sale_revenue_per_customer.png"/>
+                </section>
+				<section>
+                    <h2>Purchase</h2>
+                    <ul>
+                        <li class="fragment">Add link to product supplier on purchase line</li>
+                        <li class="fragment">Warning when confirm a purchase linked to a request of diferent warehouse</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Purchase Request Quotation</h2>
+                    <ul>
+                        <li class="fragment">Initiated by Employee</li>
+                        <li class="fragment">Approval from a special group</li>
+                        <li class="fragment">Using the purchase workflow</li>
+                    </ul>
+                </section>
+				<section>
+                    <img src="img/thats-all.jpg"/>
+                </section>
+				<section>
+                    <h1>Thank you!</h1>
+                    <p>The presentation code is avaiable on </p>
+                    <p><a target="_blank"
+                        href="http://github.com/pokoli/whats-new-in-tryton-48/">
+                        http://github.com/pokoli/whats-new-in-tryton-48/
+                    </a></p>
+                    <h1 class="fragment">Questions?</h1>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
